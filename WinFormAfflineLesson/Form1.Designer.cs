@@ -56,6 +56,7 @@ namespace WinFormAfflineLesson
             this.addButton.TabIndex = 1;
             this.addButton.Text = "Добавить";
             this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // updateButton
             // 
@@ -67,6 +68,7 @@ namespace WinFormAfflineLesson
             this.updateButton.TabIndex = 2;
             this.updateButton.Text = "Изменить";
             this.updateButton.UseVisualStyleBackColor = false;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // deleteButton
             // 
@@ -78,6 +80,7 @@ namespace WinFormAfflineLesson
             this.deleteButton.TabIndex = 3;
             this.deleteButton.Text = "Удалить";
             this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // Form1
             // 

@@ -54,14 +54,16 @@ namespace WinFormAfflineLesson
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(233, 34);
+            this.textBox1.Location = new System.Drawing.Point(236, 34);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(251, 39);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "John";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(233, 281);
             this.button1.Name = "button1";
@@ -69,6 +71,7 @@ namespace WinFormAfflineLesson
             this.button1.TabIndex = 2;
             this.button1.Text = "Ok";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 
@@ -126,6 +129,7 @@ namespace WinFormAfflineLesson
             // 
             // button2
             // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(392, 281);
             this.button2.Name = "button2";
@@ -133,6 +137,7 @@ namespace WinFormAfflineLesson
             this.button2.TabIndex = 9;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // registrForm
             // 
@@ -158,15 +163,15 @@ namespace WinFormAfflineLesson
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Button button2;
     }
 }
